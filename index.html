@@ -13,57 +13,146 @@
   <body>
 
     <div class="window-body">
-      <menu role="tablist">
-        <li role="tab" aria-selected="true"><a href="#tabs">Desktop</a></li>
-        <li role="tab"><a href="#tabs">Control Panel</a></li>
-        <li role="tab"><a href="#tabs">Top Secret</a></li>
-      </menu>
-      <div class="window" role="tabpanel">
-        <div class="window-body">
-
-          <h3>You have arrived at kyle-tyler.com</h1>
-          <p class="p1">Hey there.</p> 
-          <p class="p3">Welcome to my website.</p> 
-          <p class="p2">We like to take it easy here.</p>
-      
-          <div class="window drink-holder-holder" style="width: 275px">
-            <div class="title-bar">
-              <div class="title-bar-text">A Tasty Beverage</div>
-              <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
+        <menu role="tablist">
+          <li role="tab" aria-selected="true"><a href="">Desktop</a></li>
+          <li role="tab"><a href="">Control Panel</a></li>
+          <li role="tab"><a href="">Top Secret</a></li>
+        </menu>
+        <div class="window" role="tabpanel">
+          <div class="window-body main-content">
+  
+            <h3>You have arrived at kyle-tyler.com</h1>
+  
+            <hr>
+  
+            <p class="p1">Hey there.</p> 
+            <p class="p3">Welcome to my website.</p> 
+            <p class="p2">We like to take it easy here.</p>
+        
+            <div class="window drink-holder-holder" style="width: 275px">
+              <div class="title-bar">
+                <div class="title-bar-text">A Tasty Beverage</div>
+                <div class="title-bar-controls">
+                  <button aria-label="Minimize"></button>
+                  <button aria-label="Maximize"></button>
+                  <button aria-label="Close"></button>
+                </div>
+              </div>
+              <div class="window-body">
+                <div id="drink" class="drink-holder">
+                  <p>Have a drink, on me:</p>
+                  <img onclick="drinkUp()" src="images/caprisunlarge.gif"/>
+                </div>
+                <div id="post-drink" class="post-drink-holder">
+                  <p class="post-drink-item">Refreshing!</p>
+                  <audio id="slurp" src="audio/slurp.wav"></audio>
+                </div>
               </div>
             </div>
-            <div class="window-body">
-              <div id="drink" class="drink-holder">
-                <p>Have a drink, on me:</p>
-                <img onclick="drinkUp()" src="images/caprisunlarge.gif"/>
-              </div>
-              <div id="post-drink" class="post-drink-holder">
-                <p class="post-drink-item">Refreshing!</p>
-                <audio id="slurp" src="audio/slurp.wav"></audio>
+  
+            <hr>
+  
+            <div class="about-me">
+              <p>I'm Kyle, glad you're here! A little bit about me:</p>
+              <p>
+                I'm a software engineer who's done a little bit of everything over the years. In college I studied Computer Science with a focus on Simulation 
+                and Game Programming at Oregon State University, and have folders full of abandoned game projects made in every engine you can think of. After
+                graduating, I worked at The City doing IT for a little while. Since then I've been working as a full stack developer for a small company, and in 
+                that time I've worn a lot of different hats.
+                <br><br>
+                <i>The frontend loves me; the backend wants to be me.</i>
+              </p>
+              <br>
+              <p><strong>Vue, HTML, CSS, Javascript</strong></p>
+              <p>
+                Using these web technologies I've quickly built demos to show off tech to potential clients, created sophisticated audio analysis dashboards, and made 
+                interactive modules for teaching users about how to use our tools.
+              </p>
+              <br>
+              <p><strong>Python, FastAPI, Node.js</strong></p>
+              <p>
+                I've designed REST APIs and implemented them in both Python and Javascript based tech stacks. My goal is always to create useful, understandable, and
+                well-documented APIs. 
+              </p>
+              <br>
+              <p><strong>Docker, Docker Compose, CI/CD, Git</strong></p>
+              <p>
+                In my work I've containerized and deployed web applications using Docker, Docker Compose, and Gitlab CI/CD pipelines. I am comfortable writing
+                Dockerfiles and Docker Compose files so others can easily run what I've built. This also includes helping to write the CI/CD pipelines that build images for deployment. 
+              </p>
+              <br>
+              <p><strong>Documentation, Design, and Collaboration</strong></p>
+              <p>
+                I pride myself on my ability to communicate clearly with my team and to document my work well, whether it's writing good commit messages, creating useful readmes, 
+                or writing awesome documentation. As a full stack developer, I've been involved in nearly every part of the application development process: gathering requirements,
+                working with designers, implementing and iterating on applications, and demoing my work (both virtually and in-person). 
+              </p>
+              <br>
+              <p>The bottom line is that I like making cool stuff (whatever the technology/medium) and love working with teams who want to do the same!</p>
+            </div>
+  
+            <hr>
+  
+            <p>Here are some of the places you can find me online:</p>
+            <ul class="tree-view">
+              <li><a href="https://abnorvec.itch.io/" target="_blank">my itch.io page</a></li>
+              <li><a href="https://bsky.app/profile/abnormalvector.bsky.social" target="_blank">my bsky</a></li>
+              <li><a href="https://www.linkedin.com/in/kyle-tyler-61307314a/" target="_blank">linkedin (if you're into that kind of thing)</a></li>
+              <li><a href="mailto:kyletyler17@gmail.com" target="_blank">good ol' email: kyletyler17@gmail.com</a></li>
+            </ul>
+  
+            <hr>
+  
+            <p>Now for some random facts about me:</p>
+            <ul>
+              <li>I have four cats and one dog</li>
+              <li>I'm studying Japanese, but 私の日本語は下手です。</li>
+              <li>I'm into bicycles, but live in Oregon so that's a seasonal hobby</li>
+              <li>I've played music for a long time, and can often be found experimenting in Ableton</li>
+            </ul>
+  
+            <br>
+  
+            <p class="marquee-title">Currently listening/watching/playing/reading:</p>
+            <div class="marquee-wrapper">
+              <div class="marquee-text">
+                <div class="marquee-text-track">
+                  <p>🎵 the pillows 🎵</p>
+                  <p>📺 jojo's bizaare adventure 📺</p>
+                  <p>🎮 metaphor: refantazio 🎮</p>
+                  <p>📕 blood in the machine 📕</p>
+                  <p>🎵 the pillows 🎵</p>
+                  <p>📺 jojo's bizaare adventure 📺</p>
+                  <p>🎮 metaphor: refantazio 🎮</p>
+                  <p>📕 blood in the machine 📕</p>
+                </div>
               </div>
             </div>
+  
+            <hr>
+  
+            <p>And if you're here, you probably like websites. Here are some websites I think are cool:</p>
+            <ul class="tree-view">
+              <li><a href="https://arcanebolt.net/" target="_blank">arcanebolt.net</a></li>
+              <li><a href="https://blendogames.com/news/post/2013-01-16-qc-dev-003-pomodoro/" target="_blank">blendogames.com</a></li>
+              <li><a href="https://casual-effects.com/markdeep/" target="_blank">casual-effects.com/markdeep</a></li>
+              <li><a href="https://www.clockworkworlds.com/" target="_blank">clockworkworlds.com</a></li>
+              <li><a href="https://downpour.games/" target="_blank">downpour.games</a></li>
+              <li><a href="https://everest-pipkin.com/#" target="_blank">everest-pipkin.com</a></li>
+              <li><a href="https://henry.codes/" target="_blank">henry.codes</a></li>
+              <li><a href="https://jdan.github.io/98.css/" target="_blank">jdan.github.io/98.css</a></li>
+              <li><a href="https://www.openstreetmap.org/#map=7/44.308/-122.300" target="_blank">openstreetmap.org</a></li>
+              <li><a href="https://public.work/" target="_blank">public.work</a></li>
+              <li><a href="https://runyourown.social/" target="_blank">runyourown.social</a></li>
+              <li><a href="http://solarprotocol.net" target="_blank">solarprotocol.net</a></li>
+              <li><a href="https://tinytools.directory/" target="_blank">tinytools.directory</a></li>
+            </ul>
+  
           </div>
-      
-          <p>Here are some of the places you can find me online:</p>
-          <ul class="tree-view">
-            <li><a href="https://abnorvec.itch.io/" target="_blank">my itch.io page</a></li>
-            <li><a href="https://bsky.app/profile/abnormalvector.bsky.social" target="_blank">my bsky</a></li>
-            <li><a href="https://www.linkedin.com/in/kyle-tyler-61307314a/" target="_blank">linkedin (if you're into that kind of thing)</a></li>
-          </ul>
-
-          <p>And if you're here, you probably like websites. Here are some websites I think are cool:</p>
-          <ul class="tree-view">
-            <li><a href="http://solarprotocol.net" target="_blank">http://solarprotocol.net</a>/</li>
-            <li><a href="https://everest-pipkin.com/#" target="_blank">https://everest-pipkin.com/#</a>/</li>
-            <li><a href="https://public.work/" target="_blank">https://public.work/</a>/</li>
-            <li><a href="https://henry.codes/" target="_blank">https://henry.codes/</a>/</li>
-          </ul>
-
         </div>
+
       </div>
+      
     </div>
 
     <script>

@@ -1,9 +1,28 @@
 body {
     background-color: #c0c0c0;
+    margin: 1rem;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+.about-me {
+    width: 50%;
+}
+
+@media (max-width: 900px) {
+    .about-me {
+      width: 100%;
+    }
+}
+
+.main-content {
+    padding: 0rem 2rem;
 }
 
 .drink-holder-holder {
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 2rem 0rem;
 }
 
 .drink-holder {
@@ -24,4 +43,34 @@ body {
 
 .p3 {
     margin-left: 7rem;
+}
+
+.marquee-title {
+    text-align: center;
+}
+
+.marquee-wrapper {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.marquee-text {
+    overflow: clip;
+}
+
+.marquee-text-track {
+    display: flex;
+    gap: 4rem;   
+    width: max-content;
+    animation: marquee-move-text 20s linear infinite;
+}
+
+.marquee-text p {
+    padding: 1rem 2.5rem;
+}
+
+@keyframes marquee-move-text {
+    to {
+        transform: translateX(-50%)
+    }
 }
