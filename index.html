@@ -1,130 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8">
+    <title>Kyle Tyler</title>
+    <meta name="description" content="a really cool website from a guy who is awesome at making websites">
+    <meta name="author" content="Kyle Tyler">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Kyle Tyler</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <div class="window-body">
+      <menu role="tablist">
+        <li role="tab" aria-selected="true"><a href="#tabs">Desktop</a></li>
+        <li role="tab"><a href="#tabs">Control Panel</a></li>
+        <li role="tab"><a href="#tabs">Top Secret</a></li>
+      </menu>
+      <div class="window" role="tabpanel">
+        <div class="window-body">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
-
-  <link rel="icon" type="image/png" href="images/favicon.jpg">
-
-</head>
-<body>
-
-</head>
-<body>
-
-  <div class="header container">
-    <div class="row">
-      <div class="twelve columns">
-        <nav>
-          <ul>
-            <li class="myname"><a href="/index.html">Kyle Tyler</a></li>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/resume.html">Resume</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <hr>
-  </div>
-
-  <div class="container">
-<div class="row">
-  <div class="twelve columns">
-  
-        <h1>Hi!</h1>
-  
-        <div class="row">
-  
-          <div class="two-thirds column">
-            <p>
-              This website is the portfolio of me, <b>Kyle Tyler</b>, a freshly graduated student of 
-              <b>Computer Science</b> with a focus on <b>Simulation and Game Programming</b> 
-              at <b>Oregon State University</b>. I am a developer focused on <b>3D graphics</b> and 
-              <b>game development</b>, and have experience using <b>Unreal, Unity, OpenGL, GLSL</b> 
-              and a variety of other games and graphics focused tools. Though my personal work and course 
-              work has focused on games and graphics, I am competent in many aspect of
-              software development. My skills include the <b>C and C++</b> programming languages, an 
-              understanding of applied <b>3D math</b> concepts, and much more!
-            </p>
-        
-        <p> I <b>graduated June 2019</b> and am seeking full time employment. Take a look below for a dump of a lot of my work, and head over to my projects page if you 
-          only want to see the best!
-          
-          </div>
-  
-          <div class="one-third column portrait">
-            <img src="images/me.jpg" alt="img" >
-          </div>
-
-          
-  
-  
-        </div>
-  
-      </div>
-    </div>
-  
-    <hr>
-  
-    <h2 id="gallery">Here is a bunch of my work!</h2>
-
-    <!-- Enter whatever I want to be on my home page here -->
-    <div class="row gallery-row">
+          <h3>You have arrived at kyle-tyler.com</h1>
+          <p class="p1">Hey there.</p> 
+          <p class="p3">Welcome to my website.</p> 
+          <p class="p2">We like to take it easy here.</p>
       
-      <div class="one-third column">
-        <a href="https://github.com/kyletyler/RayTracer"><img src="images/raytracer.png" alt="img" ></a>
+          <div class="window drink-holder-holder" style="width: 275px">
+            <div class="title-bar">
+              <div class="title-bar-text">A Tasty Beverage</div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <div id="drink" class="drink-holder">
+                <p>Have a drink, on me:</p>
+                <img onclick="drinkUp()" src="images/caprisunlarge.gif"/>
+              </div>
+              <div id="post-drink" class="post-drink-holder">
+                <p class="post-drink-item">Refreshing!</p>
+                <audio id="slurp" src="audio/slurp.wav"></audio>
+              </div>
+            </div>
+          </div>
+      
+          <p>Here are some of the places you can find me online:</p>
+          <ul class="tree-view">
+            <li><a href="https://abnorvec.itch.io/" target="_blank">my itch.io page</a></li>
+            <li><a href="https://bsky.app/profile/abnormalvector.bsky.social" target="_blank">my bsky</a></li>
+            <li><a href="https://www.linkedin.com/in/kyle-tyler-61307314a/" target="_blank">linkedin (if you're into that kind of thing)</a></li>
+          </ul>
+
+          <p>And if you're here, you probably like websites. Here are some websites I think are cool:</p>
+          <ul class="tree-view">
+            <li><a href="http://solarprotocol.net" target="_blank">http://solarprotocol.net</a>/</li>
+            <li><a href="https://everest-pipkin.com/#" target="_blank">https://everest-pipkin.com/#</a>/</li>
+            <li><a href="https://public.work/" target="_blank">https://public.work/</a>/</li>
+            <li><a href="https://henry.codes/" target="_blank">https://henry.codes/</a>/</li>
+          </ul>
+
+        </div>
       </div>
-
-      <div class="one-third column">
-        <a href="https://github.com/SilverGekko/cs461"><img src="images/pressvr.PNG" alt="img" ></a>
-      </div>
-
-      <div class="one-third column">
-        <a href="https://github.com/kyletyler/OpenGL-Helicopter-Game"><img src="images/heli.png" alt="img" ></a>
-      </div>
-
-      <div class="one-third column">
-        <a href="https://github.com/kyletyler/OddsAndEnds"><img src="images/oddsandends.PNG" alt="img" ></a>
-      </div>
-
-      <div class="one-third column">
-        <a href="https://twitter.com/abnormalvector/status/1103810916410286080"><img src="images/legoPig.png" alt="img" ></a>
-      </div>
-
-      <div class="one-third column">
-        <a href="https://twitter.com/abnormalvector/status/1103442969544187904"><img src="images/magicLens.png" alt="img" ></a>
-      </div>
-
-      <div class="one-third column">
-        <a href="https://twitter.com/abnormalvector/status/1137116532083908608"><img src="images/particles.png" alt="img" ></a>
-      </div>
-
-      <div class="one-third column">
-        <a href="https://twitter.com/abnormalvector/status/1090355406738575360"><img src="images/bumpMapping.png" alt="img" ></a>
-      </div>
-
-      <div class="one-third column">
-        <a href="https://twitter.com/abnormalvector/status/1088543472242503680"><img src="images/noiseyPig3.PNG" alt="img" ></a>
-      </div>
-
-
-
     </div>
-  
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    <script>
+      function drinkUp() {
+        document.getElementById("drink").style.display = "none"; 
+        document.getElementById("post-drink").style.display = "block"; 
+        document.getElementById("slurp").play()
+      }
+    </script>
+
+  </body>
 </html>

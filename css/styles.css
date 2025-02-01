@@ -1,0 +1,27 @@
+body {
+    background-color: #c0c0c0;
+}
+
+.drink-holder-holder {
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.drink-holder {
+    cursor: grab;
+}
+
+.post-drink-holder {
+    display: none;
+}
+
+.p1 {
+    margin-left: 2rem;
+}
+
+.p2 {
+    margin-left: 4rem;
+}
+
+.p3 {
+    margin-left: 7rem;
+}
